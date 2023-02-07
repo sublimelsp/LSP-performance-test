@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "LSP: Select Performance Test",
+        "command": "lsp_select_performance_test"
+    },
+]
