@@ -1,4 +1,4 @@
-from LSP.plugin.core.views import format_completion
+from LSP.plugin.completion import format_completion
 import json
 import os
 import tarfile
