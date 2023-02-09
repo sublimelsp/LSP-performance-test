@@ -25,5 +25,5 @@ def test_format_completions() -> str:
             format_completion(c, i, can_resolve_completion_items=True, session_name='LSP-foo', view_id=1)
 
     repeat = 3
-    times = timeit.repeat(test, repeat=3, number=1)
+    times = timeit.repeat(test, repeat=repeat, number=1)
     return 'Best of {}: {} usec. All times: {}'.format(repeat, min(times), times)
