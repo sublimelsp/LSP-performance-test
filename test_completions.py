@@ -22,7 +22,7 @@ def test_format_completions() -> str:
     def test() -> None:
         items = completions_payload['items']
         for i, c in enumerate(items):
-            format_completion(c, i, can_resolve_completion_items=True, session_name='LSP-foo', view_id=1)
+            format_completion(c, i, can_resolve_completion_items=True, session_name='LSP-foo', item_defaults={}, view_id=1)
 
     repeat = 3
     times = timeit.repeat(test, repeat=repeat, number=1)
