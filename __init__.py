@@ -1,4 +1,6 @@
 from .test_completions import test_format_completions
+from .test_json_parsing import test_json_parsing
+from .test_selection import test_selection
 from .test_json_serialization import test_json_serialization_orjson, test_json_serialization_json
 import sublime
 import sublime_plugin
@@ -6,6 +8,8 @@ import sublime_plugin
 
 TESTS = [
     test_format_completions,
+    test_json_parsing,
+    test_selection
     test_json_serialization_json,
     test_json_serialization_orjson,
 ]
