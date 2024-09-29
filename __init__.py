@@ -1,10 +1,13 @@
 from .test_completions import test_format_completions
+from .test_json_serialization import test_json_serialization_orjson, test_json_serialization_json
 import sublime
 import sublime_plugin
 
 
 TESTS = [
     test_format_completions,
+    test_json_serialization_json,
+    test_json_serialization_orjson,
 ]
 
 
